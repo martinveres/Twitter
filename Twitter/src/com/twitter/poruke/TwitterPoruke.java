@@ -38,7 +38,7 @@ public class TwitterPoruke {
 	 * @return 
 	 */
 	public String getPoruka() {
-	return "poruka";
+	return poruka;
 	}
 	/**
 	 * Kao parametar se prima poruka, koja se smesta u promenljivu poruka ukoliko njena vrednost nije null, ili ako velicina ne prekoracuje 140 karaktera.
