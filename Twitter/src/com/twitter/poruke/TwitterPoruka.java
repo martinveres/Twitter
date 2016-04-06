@@ -6,7 +6,7 @@ package com.twitter.poruke;
  * @version 1.0
  *Klasa TwitterPoruke
  */
-public class TwitterPoruke {
+public class TwitterPoruka {
 	/**
 	 * Predstavlja korisnicko ime.
 	 */

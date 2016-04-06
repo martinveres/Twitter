@@ -1,18 +1,21 @@
 package test.com.twitter.poruke;
 
+
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.twitter.poruke.TwitterPoruke;
+import com.twitter.poruke.TwitterPoruka;
+
 
 public class TestTwitterPoruka {
-	TwitterPoruke tw;
+	TwitterPoruka tw;
 	@Before
 	public void setUp() throws Exception {
-		tw = new TwitterPoruke();
+		tw = new TwitterPoruka();
 	}
 
 	@After
