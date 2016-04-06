@@ -41,7 +41,7 @@ public class TestTwitterPoruka {
 	public void testSetPorukaNull() {
 		tw.setPoruka(null);
 	}
-	@Test(expected = java.lang.RuntimeException.class)
+	@Test
 	public void testSetPorukaTacno140() {
 		String s = "";
 		for (int i = 0; i < 140; i++) {
@@ -71,6 +71,6 @@ public class TestTwitterPoruka {
 	public void testToString() {
 		tw.setKorisnik("Korisnik");
 		tw.setPoruka("Danas je veoma toplo :)");
-		assertEquals("KORISNIK:korisnik PORUKA:Danas je veoma toplo :)", tw.getPoruka());
+		assertEquals("KORISNIK:Korisnik PORUKA:Danas je veoma toplo :)", tw.toString());
 	}
 }
