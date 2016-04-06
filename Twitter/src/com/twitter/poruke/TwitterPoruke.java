@@ -34,14 +34,14 @@ public class TwitterPoruke {
 	this.korisnik = korisnik;
 	}
 	/**
-	 * Metoda vraca poruku.
+	 * Metoda vraca String "poruka". Pretpostavlja se da je u pitanju greska.
 	 * @return 
 	 */
 	public String getPoruka() {
 	return "poruka";
 	}
 	/**
-	 * Kao parametar se prima poruka, koja se smesta u promenljivu poruka ukoliko njena vrednost nije nul, ili prazan string.
+	 * Kao parametar se prima poruka, koja se smesta u promenljivu poruka ukoliko njena vrednost nije null, ili ako velicina ne prekoracuje 140 karaktera.
 	 * @param poruka
 	 * @throws RuntimeException
 	 */
