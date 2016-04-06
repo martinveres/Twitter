@@ -15,7 +15,7 @@ public class Twitter {
 			new LinkedList<TwitterPoruka>();
 	/**
 	 * Metoda koja vraca sve poruke.
-	 * @return
+	 * @return poruke
 	 */
 	public LinkedList<TwitterPoruka> vratiSvePoruke(){
 		return poruke;
@@ -23,8 +23,8 @@ public class Twitter {
 	/**
 	 * Metoda za unos nove poruke. Kreira se nova Twitter Poruka, zatim joj se dodele parametri, a nakon toga se dodaje u listu poruka.
 	 * Moguce je da ce biti potrebno dodavanje provere parametara.
-	 * @param korisnik
-	 * @param poruka
+	 * @param korisnik username
+	 * @param poruka tekst poruke
 	 */
 	public void unesi(String korisnik, String poruka) {
 		//Pravi se nova poruka i puni podacima.
@@ -44,7 +44,7 @@ public class Twitter {
 	 * maxBroj moze biti 0, i tada se on postavlja na 100.
 	 * @param maxBroj maksimalan broj vracenih poruka
 	 * @param tag kljucna rec po kojoj se pretrazuju poruke
-	 * @return
+	 * @return niz poruka
 	 */
 	public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
 		if (tag==null || tag == "")

@@ -17,15 +17,15 @@ public class TwitterPoruka {
 	private String poruka;
 	/**
 	 * Metoda vraca korisnika.
-	 * @return 
+	 * @return korisnik
 	 */
 	public String getKorisnik() {
 	return korisnik;
 	}
 	/**
-	 * Kao paremetar se prima korisnik, koji se smesta u promenljivu korisnik, ukoliko njegova vrednost nije null, ili prazan string.
-	 * @param korisnik
-	 * @throws RuntimeException
+	 * Kao paremetar se prima korisnik, koji se smesta u promenljivu korisnik.
+	 * @param korisnik username
+	 * @throws RuntimeException null ili prazan string
 	 */
 	public void setKorisnik(String korisnik) {
 	if (korisnik==null || korisnik == "")
@@ -35,16 +35,19 @@ public class TwitterPoruka {
 	}
 	/**
 	 * Metoda vraca String "poruka". Pretpostavlja se da je u pitanju greska.
-	 * @return 
+	 * @return poruka
 	 */
 	public String getPoruka() {
 	return poruka;
 	}
 	/**
-	 * Kao parametar se prima poruka, koja se smesta u promenljivu poruka ukoliko njena vrednost nije null, ili ako velicina ne prekoracuje 140 karaktera.
-	 * @param poruka
-	 * @throws RuntimeException
-	 */
+	 * Kao parametar se prima poruka.
+	 * @param poruka tekst poruke
+	 * @throws RuntimeException <ul>
+	 * 		<li> null </li>
+	 * 		<li> broj karaktera >140 </li>
+	 * </ul>
+	 */ 
 	public void setPoruka(String poruka) {
 	if (poruka==null || poruka.length()>140)
 	throw new RuntimeException(
